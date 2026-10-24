@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-ubuntu: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-yatra: "Yatra One", sans-serif;
+  --font-rozha: "Rozha One", serif;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 22s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF9F5;
+    color: #1A1A1A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbars for a clean light look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4E2DC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D1CFCA;
+}
+
+/* GPU Hardware Acceleration & Silky 60/120fps Compositor Animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+@keyframes rotor-cw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotor-ccw {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-rotor-cw {
+  transform-origin: center;
+  animation: rotor-cw 0.08s linear infinite;
+  will-change: transform;
+}
+
+.animate-rotor-ccw {
+  transform-origin: center;
+  animation: rotor-ccw 0.08s linear infinite;
+  will-change: transform;
+}
+
+/* Skip layout & render work for off-screen sections on mobile & desktop */
+.content-auto,
+.mobile-optimized-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+/* ==========================================================================
+   MOBILE-FIRST PERFORMANCE & FLUIDITY ENHANCEMENTS (< 768px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* Disable heavy GPU-taxing backdrop filters on scrolling page content */
+  body:not(.modal-open) .backdrop-blur-md,
+  body:not(.modal-open) .backdrop-blur-sm,
+  body:not(.modal-open) .backdrop-blur-lg {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Prevent stickiness of desktop hover transforms on touch screens */
+  @media (hover: none) {
+    .hover\:scale-102:hover {
+      transform: none !important;
+    }
+    .hover\:-translate-y-1:hover,
+    .hover\:-translate-y-0\.5:hover {
+      transform: none !important;
+    }
+  }
+
+  /* Optimize momentum scrolling on iOS and Android */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
