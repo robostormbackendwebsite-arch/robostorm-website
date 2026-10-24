@@ -1,0 +1,180 @@
+{
+  "schools": [
+    {
+      "id": "sch-call-mvb54o50",
+      "createdAt": "2026-10-16T15:46:45.565Z",
+      "notes": "School Location: maharahsstra. Contact Person: dr shoak",
+      "preferredTime": "02:00 PM - 03:00 PM",
+      "city": "maharahsstra",
+      "phone": "957933922",
+      "contactPerson": "dr shoak",
+      "programInterest": "Turnkey STREAM Lab Setup",
+      "preferredDate": "2026-12-12",
+      "schoolName": "asdfgfdsa",
+      "email": "ajnasjsxnan",
+      "status": "new"
+    },
+    {
+      "id": "sch-call-mvb4xx3p",
+      "createdAt": "2026-10-16T15:41:30.135Z",
+      "notes": "Live test setup for verification",
+      "preferredTime": "11:30 AM - 12:30 PM",
+      "city": "Kolhapur, Maharashtra",
+      "phone": "+91 9876543210",
+      "contactPerson": "Dr. S. Patil",
+      "programInterest": "Turnkey STREAM Lab Setup",
+      "preferredDate": "2026-10-25",
+      "schoolName": "Greenwood High School",
+      "email": "principal@greenwood.edu.in",
+      "status": "new"
+    }
+  ],
+  "parents": [
+    {
+      "id": "par-call-mvb5cfop",
+      "courseInterest": "Robotics & Coding",
+      "createdAt": "2026-10-16T15:52:48.741Z",
+      "parentName": "Aarav Sharma",
+      "notes": "Consultation on 2026-10-28 at 04:00 PM - 05:00 PM. Activity Center Course Inquiry",
+      "phone": "+91 9123456780",
+      "email": "aarav.parent@gmail.com",
+      "status": "new"
+    },
+    {
+      "id": "par-call-mvb5ad0e",
+      "courseInterest": "Robotics & Coding",
+      "createdAt": "2026-10-16T15:51:11.957Z",
+      "parentName": "atharv lokare",
+      "notes": "Consultation on 2026-12-12 at 04:00 PM - 05:00 PM. Activity Center Course Inquiry",
+      "phone": "9322548680",
+      "email": "atharv@gmail.com",
+      "status": "new"
+    },
+    {
+      "id": "par-call-mvb5215r",
+      "courseInterest": "Robotics & Coding",
+      "createdAt": "2026-10-16T15:44:43.321Z",
+      "parentName": "atharvlokare",
+      "notes": "Consultation on 2026-12-17 at 02:00 PM - 03:00 PM. Activity Center Course Inquiry",
+      "phone": "9322548680",
+      "email": "atharvlokare65@gmail.com",
+      "status": "new"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "con-mvb5cfol-2810",
+      "notes": "Activity Center Course Inquiry",
+      "city": "Maharashtra",
+      "contactPerson": "Aarav Sharma",
+      "createdAt": "2026-10-16T15:52:48.741Z",
+      "clientType": "parent",
+      "preferredTime": "04:00 PM - 05:00 PM",
+      "phone": "+91 9123456780",
+      "stream": "Robotics & Coding",
+      "name": "Aarav Sharma",
+      "preferredDate": "2026-10-28",
+      "email": "aarav.parent@gmail.com",
+      "status": "pending"
+    },
+    {
+      "id": "con-mvb5ad06-6627",
+      "notes": "Activity Center Course Inquiry",
+      "city": "Maharashtra",
+      "contactPerson": "atharv lokare",
+      "createdAt": "2026-10-16T15:51:11.957Z",
+      "clientType": "parent",
+      "preferredTime": "04:00 PM - 05:00 PM",
+      "phone": "9322548680",
+      "stream": "Robotics & Coding",
+      "name": "atharv lokare",
+      "preferredDate": "2026-12-12",
+      "email": "atharv@gmail.com",
+      "status": "pending"
+    },
+    {
+      "id": "lw6HgZovo4eI0aqXCsu2",
+      "notes": "School Location: maharahsstra. Contact Person: dr shoak",
+      "city": "maharahsstra",
+      "contactPerson": "dr shoak",
+      "createdAt": "2026-10-16T15:46:45.565Z",
+      "clientType": "school",
+      "preferredTime": "02:00 PM - 03:00 PM",
+      "phone": "957933922",
+      "stream": "Turnkey STREAM Lab Setup",
+      "name": "asdfgfdsa",
+      "preferredDate": "2026-12-12",
+      "schoolName": "asdfgfdsa",
+      "email": "ajnasjsxnan",
+      "status": "pending"
+    },
+    {
+      "id": "con-mvb5214p-2546",
+      "notes": "Activity Center Course Inquiry",
+      "city": "Maharashtra",
+      "contactPerson": "atharvlokare",
+      "createdAt": "2026-10-16T15:44:43.321Z",
+      "clientType": "parent",
+      "preferredTime": "02:00 PM - 03:00 PM",
+      "phone": "9322548680",
+      "stream": "Robotics & Coding",
+      "name": "atharvlokare",
+      "preferredDate": "2026-12-17",
+      "email": "atharvlokare65@gmail.com",
+      "status": "pending"
+    },
+    {
+      "id": "oKoG1xySr4kdMa63aT60",
+      "notes": "Live test setup for verification",
+      "city": "Kolhapur, Maharashtra",
+      "contactPerson": "Dr. S. Patil",
+      "createdAt": "2026-10-16T15:41:30.135Z",
+      "clientType": "school",
+      "preferredTime": "11:30 AM - 12:30 PM",
+      "phone": "+91 9876543210",
+      "stream": "Turnkey STREAM Lab Setup",
+      "name": "Dr. S. Patil (Principal)",
+      "preferredDate": "2026-10-25",
+      "schoolName": "Greenwood High School",
+      "email": "principal@greenwood.edu.in",
+      "status": "pending"
+    }
+  ],
+  "careers": [
+    {
+      "jobId": "trainer-01",
+      "jobTitle": "Senior Robotics Trainer",
+      "fullName": "Test Candidate",
+      "phone": "9876543210",
+      "email": "test@candidate.com",
+      "preferredLocation": "Kolhapur",
+      "qualification": "B.E. Robotics",
+      "experience": "2 Years",
+      "portfolioLink": "https://linkedin.com/in/test",
+      "message": "Ready to join team",
+      "id": "j3xzXbRu24ZUJI9npLdl",
+      "status": "applied",
+      "createdAt": "2026-10-23T07:12:43.656Z"
+    },
+    {
+      "id": "app-mvkmukcr-5310",
+      "jobId": "trainer-01",
+      "jobTitle": "Senior Robotics Trainer",
+      "fullName": "Test Candidate",
+      "phone": "9876543210",
+      "email": "test@candidate.com",
+      "preferredLocation": "Kolhapur",
+      "qualification": "B.E. Robotics",
+      "experience": "2 Years",
+      "portfolioLink": "https://linkedin.com/in/test",
+      "message": "Ready to join team",
+      "status": "applied",
+      "createdAt": "2026-10-23T07:12:43.656Z",
+      "serverTimestamp": {
+        "_seconds": 1792739573,
+        "_nanoseconds": 381000000
+      }
+    }
+  ],
+  "subscribers": []
+}
